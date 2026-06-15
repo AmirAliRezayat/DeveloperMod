@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevMod</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="welcome-screen">
+        <div class="welcome-box">
+
+            <img src="icons/logo.png" class="welcome-logo" alt="DevMod">
+
+            <h1 id="welcome-title"></h1>
+
+            <p id="welcome-message"></p>
+
+        </div>
+    </div>
+
+    <div id="setup-overlay">
+
+        <div class="setup-box">
+
+            <img src="icons/logo.png" class="setup-logo" alt="DevMod">
+
+            <h2>به DevMod خوش اومدی</h2>
+
+            <p>اسمت رو وارد کن تا داشبورد شخصی‌سازی بشه.</p>
+
+            <input
+                id="username-input"
+                type="text"
+                placeholder="مثلاً امیرعلی"
+                autocomplete="off"
+                maxlength="25">
+
+            <button id="save-username">
+                شروع
+            </button>
+
+        </div>
+
+    </div>
+
+    <div id="about-modal">
+
+        <div class="about-box">
+
+            <button id="close-about">
+                ×
+            </button>
+
+            <img src="icons/logo.png" class="about-logo" alt="DevMod">
+
+            <h2>DevMod</h2>
+
+            <p>
+                ساخته شده با عشق توسط
+                <strong>امیرعلی رضایت ❤️</strong>
+            </p>
+
+            <span>
+                Thank you for using DevMod.
+            </span>
+
+        </div>
+
+    </div>
+
+    <main class="dashboard">
+
+        <header class="header">
+
+            <div class="greeting-section">
+
+                <h1 id="hello-text"></h1>
+
+                <p id="greeting-text"></p>
+
+            </div>
+
+            <div class="clock-section">
+
+                <div id="time"></div>
+
+                <div id="date"></div>
+
+            </div>
+
+        </header>
+
+        <section class="search-section">
+
+            <form
+                action="https://www.google.com/search"
+                method="GET">
+
+                <input
+                    class="search-input"
+                    type="text"
+                    name="q"
+                    placeholder="جستجو در گوگل..."
+                    autocomplete="off">
+
+            </form>
+
+        </section>
+
+        <section class="shortcuts">
+
+            <a href="https://www.python.org" class="shortcut-card">
+                <img src="icons/python.png" alt="Python">
+                <span>Python</span>
+            </a>
+
+            <a href="https://chatgpt.com" class="shortcut-card">
+                <img src="icons/chatgpt.png" alt="ChatGPT">
+                <span>ChatGPT</span>
+            </a>
+
+            <a href="https://claude.ai" class="shortcut-card">
+                <img src="icons/claude.png" alt="Claude">
+                <span>Claude</span>
+            </a>
+
+            <a href="https://gemini.google.com" class="shortcut-card">
+                <img src="icons/gemini.png" alt="Gemini">
+                <span>Gemini</span>
+            </a>
+
+            <a href="https://github.com" class="shortcut-card">
+                <img src="icons/github.png" alt="GitHub">
+                <span>GitHub</span>
+            </a>
+
+            <a href="https://wordpress.com" class="shortcut-card">
+                <img src="icons/wordpress.png" alt="WordPress">
+                <span>WordPress</span>
+            </a>
+
+        </section>
+
+    </main>
+
+    <div class="bottom-left">
+
+        <div class="network-info">
+
+            <div id="status-dot"></div>
+
+            <span id="network-status"></span>
+
+        </div>
+
+        <div class="ip-info">
+
+            <span id="ip"></span>
+
+        </div>
+
+    </div>
+
+    <footer>
+
+        <button id="about-btn">
+
+            درباره ما
+
+        </button>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
