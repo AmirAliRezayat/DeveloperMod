@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "DevMod",
+  "version": "1.0.0",
+  "description": "DevMod - AmirAliRezayat",
+
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+
+  "permissions": [
+    "storage"
+  ],
+
+  "host_permissions": [
+    "https://api.ipify.org/*"
+  ]
+}
